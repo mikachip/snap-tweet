@@ -97,7 +97,7 @@ const argv = cli({
 				tweetId,
 				options,
 			);
-			const fileName = `snap-tweet-${recommendedFileName}`;
+			const fileName = `${recommendedFileName}`;
 
 			if (options.outputDir) {
 				const filePath = await unusedFilename(path.resolve(options.outputDir, fileName));
